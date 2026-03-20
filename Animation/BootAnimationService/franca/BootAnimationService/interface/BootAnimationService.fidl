@@ -1,0 +1,28 @@
+package BootAnimationService
+
+interface BootAnimation {
+    version { major 1 minor 1 }
+
+    enumeration DevType {
+        CLUSTER
+        CABIN
+    }
+
+    enumeration StartupStatus {
+        STARTING
+        START_COMPLETE
+        START_FAIL
+    }
+
+    <**
+        @description: 上报启动状态
+        params: (in)dev 设备类型
+        params: (in)status 启动状态
+    **>
+    method ReportStartupStatus fireAndForget{
+        in {
+            DevType dev
+            StartupStatus status
+        }
+    }
+}

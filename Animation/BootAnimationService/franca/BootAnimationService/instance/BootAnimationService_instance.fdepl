@@ -1,0 +1,10 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-SOMEIP_deployment_spec.fdepl"
+import "../interface/BootAnimationService.fdepl"
+import "../interface/BootAnimationService.fidl"
+
+define org.genivi.commonapi.someip.deployment for provider as ServiceBootAnimation {
+    instance BootAnimationService.BootAnimation {
+        InstanceId = "BootAnimationService.BootAnimation"
+        SomeIpInstanceID = 0x1
+    }
+}

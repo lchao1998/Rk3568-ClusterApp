@@ -1,0 +1,101 @@
+#include "WarningPopupDataModel.h"
+
+#include "sm_warningpopupdata.h"
+
+WarningPopupDataModel::WarningPopupDataModel(int updateInterval, QObject *parent)
+    : DataModel{updateInterval, parent}
+{
+
+}
+
+void WarningPopupDataModel::updateData()
+{
+    DATA_PROERTY_CHECK(door_Pop)
+    DATA_PROERTY_CHECK(Seatbelt_Pop)
+    DATA_PROERTY_CHECK(TPMSPressureStaFL_Pop)
+    DATA_PROERTY_CHECK(TPMSPressureStaFR_Pop)
+    DATA_PROERTY_CHECK(TPMSPressureStaRL_Pop)
+    DATA_PROERTY_CHECK(TPMSPressureStaRR_Pop)
+    DATA_PROERTY_CHECK(Drivable_Pop)
+//    DATA_PROERTY_CHECK(Overspeed_Pop)
+
+    DATA_PROERTY_CHECK(ABSfailed_Pop)
+    DATA_PROERTY_CHECK(ESCFailed_Pop)
+    DATA_PROERTY_CHECK(HDCWorkSts_Pop)
+    DATA_PROERTY_CHECK(EBDFailed_Pop)
+    DATA_PROERTY_CHECK(AVHSts_Pop)
+    DATA_PROERTY_CHECK(BasicElecSteerFailed_Pop)
+    DATA_PROERTY_CHECK(CruiseCtrlStaError_Pop)
+    DATA_PROERTY_CHECK(EngineSta_Pop)
+    DATA_PROERTY_CHECK(TransSta_Pop)
+    DATA_PROERTY_CHECK(TPMSError_Pop)
+    DATA_PROERTY_CHECK(LimpHomeSta_Pop)
+    DATA_PROERTY_CHECK(PwrTrainHighTempWrning_Pop)
+    DATA_PROERTY_CHECK(PwrTrainConnectSta_Pop)
+    DATA_PROERTY_CHECK(MotorHighTempWrning_Pop)
+    DATA_PROERTY_CHECK(BMSSysFailSta_Pop)
+    DATA_PROERTY_CHECK(DrvMotorSta_Pop)
+    DATA_PROERTY_CHECK(PCUFailSta_Pop)
+    DATA_PROERTY_CHECK(InsulationWrning_Pop)
+    DATA_PROERTY_CHECK(PASwarn_Pop)
+    DATA_PROERTY_CHECK(PASSta_Pop)
+    DATA_PROERTY_CHECK(SRSError_Pop)
+    DATA_PROERTY_CHECK(BatSOCRptWarning_Pop)
+    DATA_PROERTY_CHECK(PEPSWarnSta_Pop)
+
+
+//    DATA_PROERTY_CHECK(HU_VehicleMainLamp_Pop)
+    DATA_PROERTY_CHECK(HU_brakeliquidlevel_Pop)
+    DATA_PROERTY_CHECK(highCoolantTemperature_Pop)
+    DATA_PROERTY_CHECK(HU_MachineOilPre_Pop)
+    DATA_PROERTY_CHECK(lowFuel_Pop)
+//    DATA_PROERTY_CHECK(PALAresponse_Pop)
+    DATA_PROERTY_CHECK(TPMSUnLearned_Pop)
+    DATA_PROERTY_CHECK(CruiseCtrlStaActive_Pop)
+    DATA_PROERTY_CHECK(VSPsta_Pop)
+}
+
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, door_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, Seatbelt_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, TPMSPressureStaFL_Pop, int)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, TPMSPressureStaFR_Pop, int)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, TPMSPressureStaRL_Pop, int)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, TPMSPressureStaRR_Pop, int)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, Drivable_Pop, bool)
+//DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, Overspeed_Pop, bool)
+
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, ABSfailed_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, ESCFailed_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, HDCWorkSts_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, EBDFailed_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, AVHSts_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, BasicElecSteerFailed_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, CruiseCtrlStaError_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, EngineSta_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, TransSta_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, TPMSError_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, LimpHomeSta_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, PwrTrainHighTempWrning_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, PwrTrainConnectSta_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, MotorHighTempWrning_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, BMSSysFailSta_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, DrvMotorSta_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, PCUFailSta_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, InsulationWrning_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, PASwarn_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, PASSta_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, SRSError_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, BatSOCRptWarning_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, PEPSWarnSta_Pop, bool)
+
+//DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, HU_VehicleMainLamp_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, HU_brakeliquidlevel_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, highCoolantTemperature_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, HU_MachineOilPre_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, lowFuel_Pop, bool)
+//DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, PALAresponse_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, TPMSUnLearned_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, CruiseCtrlStaActive_Pop, bool)
+DATA_PROPERTY_SIMPLE_IMPLEMENT(WarningPopupDataModel, VSPsta_Pop, bool)
+
+

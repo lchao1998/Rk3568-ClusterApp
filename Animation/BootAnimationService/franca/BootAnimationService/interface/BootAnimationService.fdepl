@@ -1,0 +1,11 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-4-SOMEIP_deployment_spec.fdepl"
+import "BootAnimationService.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface BootAnimationService.BootAnimation {
+    SomeIpServiceID = 0x0001
+
+    method ReportStartupStatus {
+        SomeIpMethodID = 0x0001
+        SomeIpReliable = true
+    }
+}

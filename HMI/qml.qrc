@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/">
+        <file>content/App.qml</file>
+        <file>content/Screen01.ui.qml</file>
+        <file>content/SpeedProgress.qml</file>
+        <file>content/Telltale.ui.qml</file>
+        <file>content/Telltale_OFF.ui.qml</file>
+        <file>content/BaseInfo_Dark.ui.qml</file>
+        <file>content/BaseInfo_Light.ui.qml</file>
+        <file>content/WaterAndOilProgress_Dark.qml</file>
+        <file>content/WaterAndOilProgress_Light.qml</file>
+        <file>content/Adas_Dark.ui.qml</file>
+        <file>content/Adas_Light.ui.qml</file>
+        <file>content/DoorCover_Dark.ui.qml</file>
+        <file>content/DoorCover_Light.ui.qml</file>
+        <file>content/DoorCover_OFF_Dark.ui.qml</file>
+        <file>content/DoorCover_OFF_Light.ui.qml</file>
+        <file>content/RadarAlarm_Dark.ui.qml</file>
+        <file>content/RadarAlarm_Light.ui.qml</file>
+        <file>content/SeatBelt_Dark.ui.qml</file>
+        <file>content/SeatBelt_Light.ui.qml</file>
+        <file>content/TirePressure_Dark.ui.qml</file>
+        <file>content/TirePressure_Light.ui.qml</file>
+        <file>content/WarningPopup_Dark.ui.qml</file>
+        <file>content/WarningPopup_Light.ui.qml</file>
+        <file>content/WarningPopup_OFF_Dark.ui.qml</file>
+        <file>content/WarningPopup_OFF_Light.ui.qml</file>
+        <file>content/TripComputer_Dark.ui.qml</file>
+        <file>content/TripComputer_Light.ui.qml</file>
+        <file>content/CenterView_Dark.ui.qml</file>
+        <file>content/CenterView_Light.ui.qml</file>
+        <file>content/SpeedDial.ui.qml</file>
+        <file>content/TachoDial.ui.qml</file>
+        <file>content/InvertEffect.qml</file>
+        <file>content/DigitalDisplay_Dark.qml</file>
+        <file>content/DigitalDisplay_Light.qml</file>
+        <file>content/Gauge_Dark.ui.qml</file>
+        <file>content/Gauge_Light.ui.qml</file>
+    </qresource>
+</RCC>
