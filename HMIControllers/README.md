@@ -13,31 +13,13 @@ $$$$$$$$\ $$ |$$ |$$ |  $$ |\$$$$$$$ |      $$$$$$$  |$$ | $$ | $$ |\$$$$$$$ |$$
 
 ```
                      
-# 说明  
-RK3568项目
-# 功能  
-RK3568项目仪表应用部分
+# 说明
+HMI逻辑控制层
 
-# 模块划分  
-## appfw  
-应用基础框架层 
-## HMIController
-HMI逻辑层 - RaiteHMIController
-## HMI  
-HMI视图层 - RaiteClusterHMI
-## 投屏应用  
-投屏应用 - GvmApp
+# 功能
+负责HMI数据交互和业务逻辑处理
 
-# 开发环境
-* 开发服务器  
-  192.168.129.129
-* 公共SDK  
-  /home/share/rk3568_sdk
-* source环境脚本  
-  /home/share/rk3568_env
+# sdk 地址/home/share/ci_deploy/sxqc/[日期]/linux/sdk
 
-# 编译步骤  
-* 执行  
-  ./build.sh
-* 清理  
-  ./clean.sh
+
+

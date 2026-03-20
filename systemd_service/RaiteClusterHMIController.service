@@ -1,0 +1,13 @@
+[Unit]
+Description=RaiteClusterHMIController
+Wants=autodataservice.service
+
+[Service]
+Type=simple
+Environment=AUTOSOCM_APP_NAME=RaiteClusterHMIController
+Environment=VSOMEIP_CONFIGURATION=/usr/etc/vsomeip.json
+ExecStart=/usr/bin/controller/RaiteClusterHMIController
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
